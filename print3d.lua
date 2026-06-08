@@ -74,7 +74,14 @@ local function printBlock(blockData)
     end
   end
 
-  io.write("Shapes loaded: " .. printer.getShapeCount() .. " inactive, " .. select(2, printer.getShapeCount()) .. " active\n")
+  -- Защита от печати пустых блоков
+  local inactive = printer.getShapeCount()
+  if inactive == 0 then
+    io.write("Block contains 0 shapes. Skipping empty block (air).\n")
+    return true
+  end
+
+  io.write("Shapes loaded: " .. inactive .. " inactive, " .. select(2, printer.getShapeCount()) .. " active\n")
   
   local result, reason = printer.commit(count)
   if result then
@@ -110,7 +117,11 @@ if data.multiblock then
     io.write("============================================\n")
     local success = printBlock(block)
     if success then
-      waitForPrinter()
+      -- Ожидаем окончания только если блок содержал фигуры и реально печатается
+      local inactive = printer.getShapeCount()
+      if inactive > 0 then
+        waitForPrinter()
+      end
     else
       io.stderr:write("Process stopped due to config error.\n")
       os.exit(3)
@@ -121,6 +132,9 @@ else
   -- Обычная одноблочная печать
   local success = printBlock(data)
   if success then
-    waitForPrinter()
+    local inactive = printer.getShapeCount()
+    if inactive > 0 then
+      waitForPrinter()
+    end
   end
 end
