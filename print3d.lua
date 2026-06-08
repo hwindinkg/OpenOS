@@ -67,9 +67,13 @@ local function printBlock(blockData)
   if blockData.collidable and printer.setCollidable then
     printer.setCollidable(not not blockData.collidable[1], not not blockData.collidable[2])
   end
+  
   for i, shape in ipairs(blockData.shapes or {}) do
-    local result, reason = printer.addShape(shape[1], shape[2], shape[3], shape[4], shape[5], shape[6], shape.texture, shape.state, shape.tint)
-    if not result then
+    -- pcall защищает от прерывания скрипта при невалидных фигурах
+    local ok, result, reason = pcall(printer.addShape, shape[1], shape[2], shape[3], shape[4], shape[5], shape[6], shape.texture, shape.state, shape.tint)
+    if not ok then
+      io.write("Failed adding shape (error): " .. tostring(result) .. "\n")
+    elseif not result then
       io.write("Failed adding shape: " .. tostring(reason) .. "\n")
     end
   end
@@ -83,8 +87,12 @@ local function printBlock(blockData)
 
   io.write("Shapes loaded: " .. inactive .. " inactive, " .. select(2, printer.getShapeCount()) .. " active\n")
   
-  local result, reason = printer.commit(count)
-  if result then
+  -- pcall защищает от прерывания программы при ошибках отправки в очередь
+  local ok, result, reason = pcall(printer.commit, count)
+  if not ok then
+    io.stderr:write("Failed committing job (error): " .. tostring(result) .. "\n")
+    return false
+  elseif result then
     io.write("Job successfully committed! Please wait...\n")
     return true
   else
