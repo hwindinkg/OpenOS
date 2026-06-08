@@ -1,4 +1,3 @@
--- Block [0,0,0]
 { label="hornet-estatua-p3xc2 [0,0,0]",
   tooltip="Block (0,0,0)",
   shapes={
@@ -28,8 +27,8 @@
   {14,1,10,16,2,16, texture="stone"},
   }
 }
+-- Block [0,0,0]
 
--- Block [0,0,1]
 { label="hornet-estatua-p3xc2 [0,0,1]",
   tooltip="Block (0,0,1)",
   shapes={
@@ -59,8 +58,8 @@
   {14,2,1,16,13,14, texture="nether_brick"},
   }
 }
+-- Block [0,0,1]
 
--- Block [0,1,1]
 { label="hornet-estatua-p3xc2 [0,1,1]",
   tooltip="Block (0,1,1)",
   shapes={
@@ -69,8 +68,8 @@
   {1,9,13,16,16,16, texture="glass_blue"},
   }
 }
+-- Block [0,1,1]
 
--- Block [0,2,0]
 { label="hornet-estatua-p3xc2 [0,2,0]",
   tooltip="Block (0,2,0)",
   shapes={
@@ -100,16 +99,16 @@
   {1,8,1,3,13,8, texture="purpur_block"},
   }
 }
+-- Block [0,2,0]
 
--- Block [0,2,1]
 { label="hornet-estatua-p3xc2 [0,2,1]",
   tooltip="Block (0,2,1)",
   shapes={
   {1,1,1,16,16,16, texture="hardened_clay_stained_red"},
   }
 }
+-- Block [0,2,1]
 
--- Block [1,0,0]
 { label="hornet-estatua-p3xc2 [1,0,0]",
   tooltip="Block (1,0,0)",
   shapes={
@@ -139,8 +138,8 @@
   {8,2,7,14,15,16, texture="planks_big_oak"},
   }
 }
+-- Block [1,0,0]
 
--- Block [1,0,1]
 { label="hornet-estatua-p3xc2 [1,0,1]",
   tooltip="Block (1,0,1)",
   shapes={
@@ -170,8 +169,8 @@
   {5,7,1,9,12,14, texture="log_big_oak"},
   }
 }
+-- Block [1,0,1]
 
--- Block [1,1,0]
 { label="hornet-estatua-p3xc2 [1,1,0]",
   tooltip="Block (1,1,0)",
   shapes={
@@ -201,8 +200,8 @@
   {11,5,11,16,16,16, texture="crimson_hyphae_side"},
   }
 }
+-- Block [1,1,0]
 
--- Block [1,1,1]
 { label="hornet-estatua-p3xc2 [1,1,1]",
   tooltip="Block (1,1,1)",
   shapes={
@@ -232,8 +231,8 @@
   {3,3,1,13,16,10, texture="crimson_hyphae_side"},
   }
 }
+-- Block [1,1,1]
 
--- Block [1,2,0]
 { label="hornet-estatua-p3xc2 [1,2,0]",
   tooltip="Block (1,2,0)",
   shapes={
@@ -263,8 +262,8 @@
   {1,3,10,16,12,16, texture="glass_red"},
   }
 }
+-- Block [1,2,0]
 
--- Block [1,2,1]
 { label="hornet-estatua-p3xc2 [1,2,1]",
   tooltip="Block (1,2,1)",
   shapes={
@@ -294,8 +293,8 @@
   {9,3,9,16,16,16, texture="glass_white"},
   }
 }
+-- Block [1,2,1]
 
--- Block [1,3,0]
 { label="hornet-estatua-p3xc2 [1,3,0]",
   tooltip="Block (1,3,0)",
   shapes={
@@ -317,8 +316,8 @@
   {9,14,9,16,16,12, texture="pale_oak"},
   }
 }
+-- Block [1,3,0]
 
--- Block [1,3,1]
 { label="hornet-estatua-p3xc2 [1,3,1]",
   tooltip="Block (1,3,1)",
   shapes={
@@ -348,8 +347,8 @@
   {4,1,1,13,16,16, texture="clay"},
   }
 }
+-- Block [1,3,1]
 
--- Block [2,0,0]
 { label="hornet-estatua-p3xc2 [2,0,0]",
   tooltip="Block (2,0,0)",
   shapes={
@@ -379,8 +378,8 @@
   {1,1,5,2,5,13, texture="planks_big_oak"},
   }
 }
+-- Block [2,0,0]
 
--- Block [2,0,1]
 { label="hornet-estatua-p3xc2 [2,0,1]",
   tooltip="Block (2,0,1)",
   shapes={
@@ -397,8 +396,8 @@
   {12,9,11,16,10,13, texture="redstone_lamp_off"},
   }
 }
+-- Block [2,0,1]
 
--- Block [2,1,0]
 { label="hornet-estatua-p3xc2 [2,1,0]",
   tooltip="Block (2,1,0)",
   shapes={
@@ -428,8 +427,8 @@
   {2,6,1,8,10,4, texture="purpur"},
   }
 }
+-- Block [2,1,0]
 
--- Block [2,1,1]
 { label="hornet-estatua-p3xc2 [2,1,1]",
   tooltip="Block (2,1,1)",
   shapes={
@@ -459,8 +458,8 @@
   {1,13,7,5,16,10, texture="blackstone"},
   }
 }
+-- Block [2,1,1]
 
--- Block [2,2,0]
 { label="hornet-estatua-p3xc2 [2,2,0]",
   tooltip="Block (2,2,0)",
   shapes={
@@ -474,8 +473,8 @@
   {14,9,1,16,16,8, texture="stone_diorite"},
   }
 }
+-- Block [2,2,0]
 
--- Block [2,2,1]
 { label="hornet-estatua-p3xc2 [2,2,1]",
   tooltip="Block (2,2,1)",
   shapes={
@@ -505,8 +504,8 @@
   {12,4,6,14,11,14, texture="glass_white"},
   }
 }
+-- Block [2,2,1]
 
--- Block [2,3,0]
 { label="hornet-estatua-p3xc2 [2,3,0]",
   tooltip="Block (2,3,0)",
   shapes={
@@ -536,8 +535,8 @@
   {6,4,8,14,13,16, texture="glass_white"},
   }
 }
+-- Block [2,3,0]
 
--- Block [2,3,1]
 { label="hornet-estatua-p3xc2 [2,3,1]",
   tooltip="Block (2,3,1)",
   shapes={
@@ -546,8 +545,8 @@
   {9,1,1,16,8,16, texture="glass_white"},
   }
 }
+-- Block [2,3,1]
 
--- Block [3,0,0]
 { label="hornet-estatua-p3xc2 [3,0,0]",
   tooltip="Block (3,0,0)",
   shapes={
@@ -577,8 +576,8 @@
   {1,10,1,7,16,7, texture="cherry"},
   }
 }
+-- Block [3,0,0]
 
--- Block [3,1,0]
 { label="hornet-estatua-p3xc2 [3,1,0]",
   tooltip="Block (3,1,0)",
   shapes={
@@ -589,3 +588,4 @@
   {5,1,13,8,8,16, texture="purpur"},
   }
 }
+-- Block [3,1,0]
